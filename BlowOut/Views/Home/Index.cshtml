@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Blow Out";
+}
+<link href="~/Content/Site.css" rel="stylesheet" />
+
+<body background="~/Content/Graphics/musical-instrument-background_1403394.jpg">
+    <div class="jumbotron SemiClear text-center">
+        <h1>Welcome to Blow Out Rentals!</h1>
+        <p class="lead">We blow our competitors out of the water</p>
+        <p class="text-center"><i><h2>“Without music, life would be a mistake”<br />&nbsp;&nbsp;&nbsp;&nbsp;― Friedrich Nietzsche</i></h2></p>
+    </div>
+
+    <div class="row SemiClear">
+        <div class="col-md-4">
+            <h2>Rentals</h2>
+            <p>
+                We offer a wide variety of instrument rentals for any occasion. Click the link below and lets get your favorite instrument in your hands today!
+            </p>
+            <p>@Html.ActionLink("Go", "Rentals", "Home", null, new { @class="btn btn-default btn-lrg" })</p>        
+        </div>
+        <div class="col-md-4">
+            <h2>About Us</h2>
+            <p>Wanna learn some cool facts about us? Click below!</p>
+            <p>@Html.ActionLink("Go", "About", "Home", null, new { @class = "btn btn-default btn-lrg" })</p>
+        </div>
+        <div class="col-md-4">
+            <h2>Contact Us</h2>
+            <p>Feel free to conact us via phone or email at any time of the day</p>
+            <p>@Html.ActionLink("Go", "Contact", "Contact", null, new { @class = "btn btn-default btn-lrg" })</p>
+        </div>
+    </div>
+</body>

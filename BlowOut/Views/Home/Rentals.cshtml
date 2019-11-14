@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Rentals";
+}
+
+<h2>Please choose one of the following rental options:</h2>
+
+<div class="jumbotron SemiClear text-center">
+    @Html.ActionLink("Used Rentals", "UsedRentals", null, null, new { @class = "btn btn-primary btn-lrg" })
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    @Html.ActionLink("New Rentals", "NewRentals", null, null, new { @class = "btn btn-primary btn-lrg" })
+</div>
